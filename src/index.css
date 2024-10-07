@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply dark:bg-zinc-800 bg-[#f3f3f3];
+}
+
+::-webkit-scrollbar-thumb {
+  @apply dark:bg-zinc-600 bg-[#c2c2c2];
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply dark:bg-zinc-400 bg-zinc-400;
+}
+
+::-webkit-scrollbar-thumb:active {
+  @apply dark:bg-zinc-200 bg-zinc-500;
+}
+
+
+/* Sidebar */
+.navlinks{
+    @apply flex gap-2 bg-white p-2 font-medium  rounded-r-full hover:bg-blue-200 transition-all duration-200 items-center ; 
+    
+}
+.navlinks.active{
+    @apply bg-blue-500 text-white;
+}
+
+
+/* animations */
+@keyframes zoomout {
+    from{ scale: 0;}
+    to{scale: 1;}
+}
